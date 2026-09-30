@@ -734,7 +734,7 @@ dependencies = [
  "blake3",
  "chrono",
  "clap",
- "dirs 7.0.0",
+ "dirs 7.0.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "dotenvy",
  "futures",
  "inferno",
@@ -1991,7 +1991,7 @@ dependencies = [
  "chromiumoxide",
  "chrono",
  "dashmap 6.2.1",
- "dirs 7.0.0",
+ "dirs 7.0.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "encoding_rs",
  "flate2",
  "futures",
@@ -2572,6 +2572,13 @@ version = "6.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "c3e8aa94d75141228480295a7d0e7feb620b1a5ad9f12bc40be62411e38cce4e"
 dependencies = [
+ "dirs-sys 0.5.0 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "dirs"
+version = "7.0.0"
+dependencies = [
  "dirs-sys 0.5.0",
 ]
 
@@ -2581,7 +2588,7 @@ version = "7.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "8d57d423b3c82e89b9a24ca3091fee61f456a26edbd28d26c65906f4bc1dcd8f"
 dependencies = [
- "dirs-sys 0.5.0",
+ "dirs-sys 0.5.0 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
@@ -2594,6 +2601,15 @@ dependencies = [
  "option-ext",
  "redox_users 0.4.6",
  "windows-sys 0.48.0",
+]
+
+[[package]]
+name = "dirs-sys"
+version = "0.5.0"
+dependencies = [
+ "libc",
+ "redox_users 0.5.3",
+ "windows-sys 0.59.0",
 ]
 
 [[package]]
@@ -10280,7 +10296,7 @@ checksum = "a360d1c9fd92fc96d9802ce77422d1a90d59d2ec767ef2c0833691f9ac86689c"
 dependencies = [
  "ahash",
  "cc",
- "dirs 7.0.0",
+ "dirs 7.0.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "fd-lock",
  "getrandom 0.4.3",
  "libloading 0.9.0",

@@ -19,6 +19,8 @@ members = [
     "packages/dart/rust",
     "packages/swift/rust",
     "tools/benchmark-harness",
+    "vendor/dirs-7.0.0",
+    "vendor/dirs-sys-0.5.0",
 ]
 exclude = ["e2e/rust", "packages/elixir/native/xberg_nif", "packages/ruby/ext/xberg_rb"]
 default-members = ["crates/xberg", "crates/xberg-cli"]
